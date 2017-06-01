@@ -1,0 +1,12 @@
+<style>
+    label{
+        cursor:pointer;
+    }
+</style>
+<h3>Search Results:</h3>
+	    <div class="list-group">
+        <div ng-repeat="movie in movies">
+              <label class="list-group-item list-group-item-action" ng-click="callapi(movie.link)">{{movie.name}}</label>
+        </div>
+        </div>
+     
